@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <title>MEMORY GAME</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href=index.css>
+</head>
+
+<body>
+
+  <div class="fullbox">
+    <div class="row ">
+      <div class="col d-flex justify-content-center">
+        <h1 id="title">Press <span class="badge badge-secondary" id="s">S</span> To Start The Game</h1>
+
+      </div>
+    </div>
+    <hr>
+
+
+
+    <div class="containe my-4">
+      <div class="row my">
+        <div class="col-6 "><a class=" bt button-blue  " id="blue" style="float: right;"></a></div>
+        <div class="col-xm-6"><a class="bt button-red" id="red"></a></div>
+      </div>
+      <br>
+      <div class="row ">
+        <div class="col-6"><a class="bt button-yellow " id="yellow" style="float: right;"></a></div>
+        <div class="col-xs-6"><a class="bt button-green" id="green"></a></div>
+      </div>
+
+
+
+    </div>
+    <div class="show ">
+      <div class="row d-flex justify-content-center">
+        <h2 id="score">Your Highest Score is</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="fullbox">
+    <div class="row">
+      <div class="col">
+
+
+
+        <div id="ruless" >
+            <strong><h2>Rules !!</h2> </strong> <h2>(Remember order of color)</h2>
+            <button id="close-rule" onclick="close()" >&#10006;</button>
+              
+        </div>
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+  <div class="fullbox">
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+       <h3> Made By <b style="padding-left:5px; padding-right:5px;"> Sourabh Awasthy
+        </h3> </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+  
+  <script src="index.js"></script>
+
+</body>
+
+</html>
