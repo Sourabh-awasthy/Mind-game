@@ -16,12 +16,12 @@ function update() {
     if (started) {
         $("h1").html(`Round  <span class="badge badge-primary" style="color:white">${level}</span>`);
         $("h1").attr("class", "text-primary")
-        $("#alert").html(`<strong>Press !! </strong>all ${level} colours in order`);
+        ;
         
     }
     else {
         if (level == 0) { $("h1").html(`Press <span class="badge badge-secondary">S</span> To Start The Game`); }
-        $("#alert").html("<strong>Rules !! </strong>Press S To Start Game (Remember order of color given by system)");
+       
         $("h1").attr("class", "title")
     }
 
@@ -129,7 +129,6 @@ function checkAnswer(currentlevel) {
         }
     } else {
         
-        soundplay("wrong");
         $("body").css("background-color", "red");
         setTimeout(function () { $("body").css("background-color", "white"); }, 300);
         recordt();
@@ -140,4 +139,6 @@ function checkAnswer(currentlevel) {
         update();
     }
 }
+
+
 
