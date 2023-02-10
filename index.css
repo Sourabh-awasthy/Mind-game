@@ -1,11 +1,15 @@
-#title{
-    text-transform: capitalize;
-    color:gray;
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_pIMJV0Y6OgCG5J056TtU5yrQ5l-jB0_tw&usqp=CAU");
+    
 }
+
+#title,
 .title{
-    text-transform: capitalize;
+    
     color:gray;
 }
+
+
 .button-yellow{
     background-color: yellow;
 }
@@ -20,20 +24,11 @@
 }
 .bt{
     display: block;
-    height: 80p;
     padding: 60px 90px;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 15px;
-    
+    cursor:pointer;
 }
-.containe{
-    margin-top: 30px;
-}
-.kt{
-    float: right;
-}
-
-
 
 @media only screen and (max-width:450px) {
     .bt{
@@ -74,55 +69,47 @@
     color:gold;
     padding: 24px 30px;
     background: rgb(181, 57, 57);
-    border: 3px solid rgb(27, 97, 46);
+    border: 3px dotted ;
     border-radius: 15px;
   }
 
  h1{
     color:blue;
-    text-decoration: wavy;
-    font-family: Arial, Helvetica, sans-serif;
     margin:auto;
     padding: 5%;
     font-size: 50px;
     text-align: center;
 
 
-    animation: bouncing 0.5s ease 0s infinite alternate both;
+    animation: shadow 1s ease 0s infinite alternate both;
     background: aqua;
     border-radius:40px;
-    display: inline-block;
+    
     color:white;
     cursor:pointer;
     font-size:  60px;
     font-weight: 300;
-    letter-spacing: 0.2em;
-    padding: 1em 2em 1.1em;
-   
-    text-decoration: none;
-    text-decoration: uppercase;
-    vertical-align: top;
+    letter-spacing: 0.1em;
+    
+    
     margin-bottom:100px;
     text-align: center;
 }
- @Keyframes bouncing{
+ @Keyframes shadow{
         0%{
             bottom: 0;
-            box-shadow: 0 10px 100px rgba(57, 1, 74, 0.1);
+            box-shadow: 0 10px 50px rgba(57, 1, 74, 0.8);
         }
     
         100%{
             bottom: 200px;
-            box-shadow: 10px 10px 10px  rgb(68, 226, 176);    
+            box-shadow: 10px 10px 5px  rgb(68, 226, 176);    
         }
 
     }
 
 
-body{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_pIMJV0Y6OgCG5J056TtU5yrQ5l-jB0_tw&usqp=CAU");
-    
-}
+
 
 h2{
     font-size: 50px;
@@ -131,22 +118,5 @@ h2{
 
 h3{
     font-size: 60px;
-    color: #080908;
+    color: white;
 }
-.warning-alert {
-    background-color: #ffb347;
-    color: #333;
-    padding: 1em;
-    border-radius: 5px;
-    position: relative;
-    
-  }
-  
-  .warning-alert #close-button {
-    position: absolute;
-    right: 1em;
-    top: 0.5em;
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-  
